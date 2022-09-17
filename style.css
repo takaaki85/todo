@@ -1,0 +1,187 @@
+:root {
+  --font-color: aliceblue;
+  --bgc: rgb(82, 167, 236);
+}
+
+/* 共通要素 */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+a,
+.add-btn {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* header要素 */
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  background-color: #9a24f4;
+  display: flex;
+}
+
+.header .logo {
+  flex: 1;
+  max-width: 350px;
+  min-width: 350px;
+  text-align: center;
+}
+
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 2;
+  min-width: 800px;
+}
+
+.header ul li {
+  padding: 0 20px;
+}
+
+.header .add-btn {
+  background-color: var(--bgc);
+  border-color: #ccc;
+  margin-right: 100px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.header .add-btn:hover {
+  color: #9a24f4;
+  background-color: var(--font-color);
+  cursor: pointer;
+}
+
+
+/* main-container要素 */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* side-bar要素 */
+.main-container .side-bar {
+  border-right: 1px solid #ccc;
+  background-color: #575757;
+  min-width: 350px;
+}
+
+.main-container .side-bar ul {
+  padding: 0;
+  margin: 0 30px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-container .side-bar ul .side-list {
+  padding-bottom: 25px;
+  margin: 25px 0 0 70px;
+  position: relative;
+}
+
+.main-container .side-bar ul .side-list[data-side_list="js"]::before {
+  content: "";
+  background-image: url(/img/js.png);
+  background-size: contain;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+.main-container .side-bar ul .side-list[data-side_list="html5"]::before {
+  content: "";
+  background-image: url(/img/html5.png);
+  background-size: contain;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+.main-container .side-bar ul .side-list[data-side_list="css"]::before {
+  content: "";
+  background-image: url(img/css.png);
+  background-size: contain;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+.main-container .side-bar ul .side-list[data-side_list="python"]::before {
+  content: "";
+  background-image: url(/img/python.png);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+.main-container .side-bar ul .side-list[data-side_list="aws"]::before {
+  content: "";
+  background-image: url(/img/aws.png);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+.main-container .side-bar ul .side-list[data-side_list="db"]::before {
+  content: "";
+  background-image: url(img/database.png);
+  background-size: contain;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20%;
+  left: -50px;
+}
+
+
+/* main-container要素 */
+.main-container .contents {
+  width: 100%;
+  background-color: #212121;
+  display: flex;
+}
+
+.main-container .contents ul {
+  padding: 0;
+  margin: 0;
+  flex: 2;
+  min-width: 800px;
+}
+
+.main-container .contents ul li {
+  padding: 25px 0;
+  margin: 0 25px;
+  border-bottom: 1px solid #24f49a;
+}
