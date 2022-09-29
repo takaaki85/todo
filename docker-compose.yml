@@ -3,5 +3,17 @@ services:
   app:
     build: .
     tty: true
+    ports:
+      - 8000:8000
     volumes:
       - .:/todo
+      - /todo/node_modules
+    depends_on:
+      - db
+  db:
+    image: postgres:14.2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: todo
+      TZ: "Asia/Tokyo"
