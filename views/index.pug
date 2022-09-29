@@ -1,0 +1,40 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    //- googleフォントがpugだとうまく読み込めなかった
+    style
+      include style.css
+    style(rel="preconnect" href="https://fonts.googleapis.com")
+    style(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    style(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet")
+    title 勉強タスク
+  body
+    header.header
+      h2.logo 勉強
+      ul
+        li.header-list: a(href="/pride") 自慢できること
+        li.header-list: a(href="/learning") 学習中のこと
+        li.header-list: a(href="/actively") もっと積極的にやること
+        button.add-btn タスクの追加
+    main.main-container
+      aside.side-bar
+        div.side-content
+          ul
+            li(class="side-list" data-side_list="js"): a(href="https://developer.mozilla.org/ja/docs/Web/JavaScript" target="_blank") Javascript
+          ul
+            li(class="side-list" data-side_list="html5"): a(href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference" target="_blank") HTML
+          ul
+            li(class="side-list" data-side_list="css"): a(href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference" target="_blank") CSS
+          ul
+            li(class="side-list" data-side_list="python"): a(href="https://docs.python.org/ja/3/reference/index.html" target="_blank") Python
+          ul
+            li(class="side-list" data-side_list="aws"): a(href="https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/" target="_blank") AWS
+          ul
+            li(class="side-list" data-side_list="db"): a(href="https://mariadb.com/kb/ja/mariadb/" target="_blank") DataBase
+        div.side-footer
+      div.contents
+        ul
+          li(class="contents-list") 今週のトピック
+          li(class="contents-list") 今週のトピック
+          li(class="contents-list") 今週のトピック

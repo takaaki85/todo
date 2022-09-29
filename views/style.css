@@ -17,6 +17,7 @@ a,
   text-decoration: none;
   color: var(--font-color);
   font-weight: 700;
+  padding-left: 30px;
 }
 
 ul li {
@@ -96,9 +97,9 @@ ul li {
   position: relative;
 }
 
-.main-container .side-bar ul .side-list[data-side_list="js"]::before {
+/* .main-container .side-bar ul .side-list[data-side_list="js"]::before {
   content: "";
-  background-image: url(/img/js.png);
+  background-image: url(../img/js.png);
   background-size: contain;
   display: inline-block;
   width: 40px;
@@ -163,7 +164,7 @@ ul li {
   position: absolute;
   top: -20%;
   left: -50px;
-}
+} */
 
 
 /* main-container要素 */
